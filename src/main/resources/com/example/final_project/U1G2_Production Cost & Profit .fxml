@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="455.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.U1G2ProductionCostProfitController">
+   <children>
+      <Label layoutX="39.0" layoutY="14.0" prefHeight="62.0" prefWidth="296.0" text="Production Cost and Profit">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="productionCostAndProfitTableView" layoutX="13.0" layoutY="66.0" prefHeight="200.0" prefWidth="672.0">
+        <columns>
+          <TableColumn fx:id="productIDProductionTableColumn" prefWidth="120.00000381469727" text="Product Id" />
+          <TableColumn fx:id="productionCostProductionTableColumn" prefWidth="116.80003356933594" text="Production Cost" />
+            <TableColumn fx:id="revenueProductionTableColumn" prefWidth="144.79998779296875" text="Revenue" />
+            <TableColumn fx:id="profitProductionTableColumn" prefWidth="144.79998779296875" text="Profit" />
+            <TableColumn fx:id="budgetProductionTableColumn" prefWidth="144.0" text="Budget" />
+        </columns>
+      </TableView>
+      <TextField fx:id="budgetProductionTextField" layoutX="383.0" layoutY="284.0" />
+      <Label layoutX="14.0" layoutY="284.0" prefHeight="26.0" prefWidth="119.0" text="Select Product Id" />
+      <Label layoutX="327.0" layoutY="284.0" prefHeight="26.0" prefWidth="74.0" text="Budget" />
+      <ComboBox fx:id="selectProductIDProductionComboBox" layoutX="147.0" layoutY="284.0" prefWidth="150.0" />
+      <Button layoutX="550.0" layoutY="280.0" mnemonicParsing="false" onAction="#setNewBudgetProductionButtonOnAction" prefHeight="34.0" prefWidth="119.0" text="Set New Budget" />
+      <Button layoutX="249.0" layoutY="353.0" mnemonicParsing="false" onAction="#saveProductionDataButtonOnAction" prefHeight="34.0" prefWidth="184.0" text="Save" />
+   </children>
+</AnchorPane>

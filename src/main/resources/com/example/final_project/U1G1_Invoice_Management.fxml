@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.U1G1InvoiceManagementController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="222.0" text="Invoice">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <TableView fx:id="invoiceTableView" layoutX="9.0" layoutY="64.0" prefHeight="200.0" prefWidth="687.0">
+        <columns>
+          <TableColumn fx:id="invoiceIdInvoiceTableColumn" prefWidth="92.79998469352722" text="Invoice Id" />
+          <TableColumn fx:id="customerNameInvoiceTableColumn" prefWidth="125.60000610351562" text="Customer Name" />
+            <TableColumn fx:id="orderDescriptionInvoiceTableColumn" prefWidth="190.4001007080078" text="Order Desciption" />
+            <TableColumn fx:id="totalAmountInvoiceTableColumn" prefWidth="143.20001220703125" text="Total Amount" />
+            <TableColumn fx:id="dueDateInvoiceTableColumn" prefWidth="132.0" text="Due Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="402.0" layoutY="369.0" mnemonicParsing="false" onAction="#extendDateRemainderInvoiceButtonOnAction" prefHeight="59.0" prefWidth="206.0" text="Extend Date and Remainder" />
+      <DatePicker fx:id="extendedDateInvoiceDatePicker" layoutX="444.0" layoutY="294.0" prefHeight="26.0" prefWidth="186.0" />
+      <Label layoutX="22.0" layoutY="294.0" prefHeight="26.0" prefWidth="139.0" text="Select Customer Name" />
+      <TextField fx:id="givenInvoiceTextField" layoutX="22.0" layoutY="353.0" prefHeight="91.0" prefWidth="322.0" />
+      <Label layoutX="30.0" layoutY="324.0" prefHeight="26.0" prefWidth="139.0" text=" Give Message" />
+      <Label layoutX="393.0" layoutY="294.0" prefHeight="26.0" prefWidth="33.0" text="Date" />
+      <ComboBox fx:id="customerNameInvoiceComboBox" layoutX="161.0" layoutY="294.0" prefHeight="26.0" prefWidth="186.0" />
+   </children>
+</AnchorPane>

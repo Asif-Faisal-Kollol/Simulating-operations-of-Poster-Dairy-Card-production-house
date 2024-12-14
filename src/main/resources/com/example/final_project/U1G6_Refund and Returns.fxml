@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="404.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.U1G6RefundAndReturnsController">
+   <children>
+      <Label layoutX="30.0" layoutY="14.0" prefHeight="54.0" prefWidth="274.0" text="Refund/Returns">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="returnRequestTableView" layoutX="26.0" layoutY="96.0" prefHeight="200.0" prefWidth="638.0">
+        <columns>
+          <TableColumn fx:id="requestIDReturnRequestTableColumn" prefWidth="99.99997138977051" text="Request Id" />
+          <TableColumn fx:id="ProductNamerefundRequestTablecolumn" prefWidth="178.40001678466797" text="Product Name" />
+            <TableColumn fx:id="amountReturnRequestTableColumn" prefWidth="113.60009765625" text="Amount" />
+            <TableColumn fx:id="complainsDescriptionReturnRequestTableColumn" prefWidth="244.0000061035156" text="Complains Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="68.0" prefHeight="28.0" prefWidth="112.0" text="Refund Request List" />
+      <Label layoutX="30.0" layoutY="315.0" prefHeight="28.0" prefWidth="112.0" text="Select RequestId" />
+      <ComboBox fx:id="selectRequestIdRefundComboBox" layoutX="142.0" layoutY="317.0" prefWidth="150.0" />
+      <Button layoutX="339.0" layoutY="317.0" mnemonicParsing="false" onAction="#confirmRefundButtonOnAction" prefHeight="28.0" prefWidth="252.0" text="Confirm Refund" />
+   </children>
+</AnchorPane>

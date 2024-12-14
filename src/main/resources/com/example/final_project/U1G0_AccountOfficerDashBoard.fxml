@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="accountOfficerDashboardborderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.U1G0AccountOfficerDashBoardController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="182.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#accInvoiceManagementDashboardButtonOnAction" prefHeight="58.0" prefWidth="174.0" text="Invoice Management" />
+            <Button layoutY="67.0" mnemonicParsing="false" onAction="#accProductionCostProfitDashboardButtonOnAction" prefHeight="63.0" prefWidth="174.0" text="Production Cost &amp; Profit" />
+            <Button layoutY="136.0" mnemonicParsing="false" onAction="#accCreatePaymentDashboardButtonOnAction" prefHeight="60.0" prefWidth="174.0" text="Payment" />
+            <Button layoutY="205.0" mnemonicParsing="false" onAction="#accMakePaymentProcessingDashBoardButtonAction" prefHeight="58.0" prefWidth="174.0" text="Payment Processing" />
+            <Button layoutY="271.0" mnemonicParsing="false" onAction="#accFinancialReportingDashboardButtonOnAction" prefHeight="56.0" prefWidth="174.0" text="Financial Reporting" />
+            <Button layoutY="334.0" mnemonicParsing="false" onAction="#accBudgetandExpenditureDashboardButtonOnAction" prefHeight="60.0" prefWidth="174.0" text="Budget and Expenditure" />
+            <Button layoutY="403.0" mnemonicParsing="false" onAction="#accRefundReturnsDashboardButtonOnAction" prefHeight="58.0" prefWidth="174.0" text="Refund/Returns" />
+            <Button layoutY="469.0" mnemonicParsing="false" onAction="#accPayrollManagementDashboardButtonOnAction" prefHeight="59.0" prefWidth="174.0" text="Payroll Management" />
+            <Button layoutY="536.0" mnemonicParsing="false" onAction="#signOutButtonOnAction" prefHeight="61.0" prefWidth="174.0" text="SignOut" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="accountDashBoardAnchorPane" prefHeight="605.0" prefWidth="716.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="145.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="380.0" layoutY="14.0" prefHeight="98.0" prefWidth="364.0" text="Account Officer Dashboard" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Line endX="378.800048828125" layoutX="562.0" layoutY="134.0" startX="-555.5999755859375" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

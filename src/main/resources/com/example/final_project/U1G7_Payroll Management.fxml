@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.U1G7PayrollManagementController">
+   <children>
+      <Label layoutX="16.0" layoutY="13.0" prefHeight="66.0" prefWidth="338.0" text="Payroll Management">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="payrollManagemantTableView" layoutX="5.0" layoutY="109.0" prefHeight="200.0" prefWidth="713.0">
+        <columns>
+          <TableColumn fx:id="empIdpayrollManagemantTableColumn" prefWidth="75.0" text="EmpId" />
+          <TableColumn fx:id="empNamepayrollManagemantTableColumn" prefWidth="103.2000503540039" text="EmpName" />
+            <TableColumn fx:id="departmentpayrollManagemantTableColumn" prefWidth="103.199951171875" text="Department" />
+            <TableColumn fx:id="salarypayrollManagemantTableColumn" prefWidth="107.2000732421875" text="Salary" />
+            <TableColumn fx:id="bonuspayrollManagemantTableColumn" prefWidth="102.4000244140625" text="Bonus" />
+            <TableColumn fx:id="deductionpayrollManagemantTableColumn" prefWidth="122.40005493164062" text="Deduction(Tax,Loan)" />
+            <TableColumn fx:id="totalPaypayrollManagemantTableColumn" prefWidth="99.2000732421875" text="Total Pay" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchempPayrollTextField" layoutX="141.0" layoutY="325.0" />
+      <Label layoutX="29.0" layoutY="325.0" prefHeight="26.0" prefWidth="126.0" text="Search Employee" />
+      <Button layoutX="331.0" layoutY="325.0" mnemonicParsing="false" onAction="#searchPayrollButtonOnAction" prefHeight="26.0" prefWidth="99.0" text="Search" />
+      <Label layoutX="29.0" layoutY="362.0" prefHeight="26.0" prefWidth="112.0" text=" EmployeeID" />
+      <Label layoutX="305.0" layoutY="362.0" prefHeight="26.0" prefWidth="126.0" text="Employee Name" />
+      <TextField fx:id="empNamePayrollTextField" layoutX="406.0" layoutY="362.0" />
+      <Label layoutX="29.0" layoutY="400.0" prefHeight="26.0" prefWidth="99.0" text="Select Department" />
+      <ComboBox fx:id="selectDeptPayrollComboBox" layoutX="140.0" layoutY="400.0" prefWidth="150.0" />
+      <Label layoutX="29.0" layoutY="446.0" prefHeight="26.0" prefWidth="75.0" text="Salary" />
+      <TextField fx:id="salaryPayrollTextField" layoutX="140.0" layoutY="447.0" />
+      <TextField fx:id="bonusPayrollTextfield" layoutX="406.0" layoutY="400.0" />
+      <Label layoutX="305.0" layoutY="399.0" prefHeight="26.0" prefWidth="64.0" text="Bonus" />
+      <TextField fx:id="deductionPayrollTextField" layoutX="141.0" layoutY="484.0" />
+      <Label layoutX="29.0" layoutY="484.0" prefHeight="26.0" prefWidth="64.0" text="Deduction" />
+      <Button layoutX="316.0" layoutY="446.0" mnemonicParsing="false" onAction="#updatePayrollButtonOnAction" prefHeight="26.0" prefWidth="99.0" text="Update" />
+      <Button layoutX="431.0" layoutY="446.0" mnemonicParsing="false" onAction="#proceedPayrollButtonOnAction" prefHeight="26.0" prefWidth="133.0" text="Proceed Payroll" />
+      <TextField fx:id="empIdPayrollTextField" layoutX="141.0" layoutY="362.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="438.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project.U1G4FinancialReportingController">
+   <children>
+      <Label layoutX="25.0" layoutY="14.0" prefHeight="51.0" prefWidth="231.0" text="Financial Report">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="74.0" prefHeight="18.0" prefWidth="140.0" text="Enter Account Number" />
+      <Label layoutX="25.0" layoutY="111.0" prefHeight="18.0" prefWidth="140.0" text="Enter Transaction Amount" />
+      <Label layoutX="375.0" layoutY="74.0" text="Date" />
+      <TextField fx:id="accountNumFinancialReportTextField" layoutX="190.0" layoutY="70.0" />
+      <TextField fx:id="transactionAmountFinancialReportTextField" layoutX="191.0" layoutY="108.0" />
+      <DatePicker fx:id="dateFinancialReportDatePicker" layoutX="419.0" layoutY="70.0" />
+      <TableView fx:id="financialReportTableView" layoutX="20.0" layoutY="158.0" prefHeight="200.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="accountfinancialReportTableColumn" prefWidth="190.40008544921875" text="Account" />
+          <TableColumn fx:id="amountfinancialReportTableColumn" prefWidth="249.59991455078125" text="Amount" />
+            <TableColumn fx:id="datefinancialReportTableColumn" prefWidth="202.39996337890625" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="269.0" layoutY="373.0" mnemonicParsing="false" onAction="#generateandSendfinancialReportButtonOnAction" prefHeight="44.0" prefWidth="164.0" text="Generate &amp; Send" />
+   </children>
+</AnchorPane>
